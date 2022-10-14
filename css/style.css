@@ -141,7 +141,7 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .cotnact-nav-link {
-  display: block;
+  display:flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -149,6 +149,7 @@ border-bottom: 1px solid #ECECEC;
   line-height: calc(16/14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  align-items: center;
 }
 
 .cotnact-nav-link:hover,
@@ -170,19 +171,18 @@ margin-right: 10px;
 /* ---------Hero Section ---------*/
 
 .hero {
+  height: 600px;
   background-color: var(--bcg-color-accent);
   text-align: center;
 padding: 0px;
   max-width: 1600px;
   margin: 0 auto; 
-  background-image: url(../images/imgfon.jpg);
-  background-size:cover;
+  padding: 200px 0;
   background-repeat: no-repeat;
-}
-
-.bg-color{
-    padding: 200px 0px;
-  background: rgba(47, 48, 58, 0.4);
+  background: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+  ),url(../images/imgfon.jpg);
 }
 
 .section-title-hero {
@@ -322,10 +322,7 @@ padding: 0px;
 
 .team {
   display: flex;
-}
-
-.team li+li {
-  margin-left: 10px;
+    gap: 30px;
 }
 
 .team img {
@@ -341,7 +338,9 @@ padding: 0px;
 
 .wrap-team-svg{
   display: flex;
-  margin: 16px 32px 0px 32px;
+  margin-top:16px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .li-team-svg a{
@@ -358,7 +357,7 @@ padding: 0px;
   height: 20px;
   width: 20px;
 }
-.li-team-svg a:hover
+.li-team-svg a:hover,
 .li-team-svg a:focus{
   color:var(--accent-praimery-white-color);
   background-color:var(--accent-text-color);
@@ -525,8 +524,10 @@ padding: 0px;
 }
 .footer-flex-div{
   display: flex;
+  align-items: baseline;
 }
 .wrap-footer-svg p{
+  font-weight: 700px;
   line-height: calc(14/16);
   text-transform: uppercase;
   margin-bottom: 20px;
