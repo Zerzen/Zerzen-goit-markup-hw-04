@@ -411,7 +411,8 @@ padding: 0px;
 .footer-logo{
   padding: 0px;
 }
-.address-link:hover {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-text-color);
 }
 
@@ -561,6 +562,7 @@ margin-left: 10px;
   width: 20px;
   height: 20px;
 }
-.footer-social-li a:hover{
+.footer-social-li a:hover,
+.footer-social-li a:focus{
   background-color: var(--accent-text-color);
 }
