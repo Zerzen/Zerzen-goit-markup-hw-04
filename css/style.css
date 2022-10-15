@@ -528,7 +528,7 @@ padding: 0px;
   align-items: baseline;
 }
 .wrap-footer-svg p{
-  font-weight: 700px;
+  font-weight: 700;
   line-height: calc(14/16);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -540,7 +540,6 @@ padding: 0px;
 margin-left:70px;
 }
 .footer-social{
-margin-left: 10px;
   display: flex;
 }
 .footer-social-li:not(:last-child){
